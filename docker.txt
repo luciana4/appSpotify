@@ -1,0 +1,14 @@
+docker run -it -d --name node -v /home/proyecto/web/node:/var/www/html/ -p 80:80 -p 443:443 node
+
+npm i -S express mysql body-parser
+
+docker inspect mysql | grep "IPAddress"
+
+https://adrianmejia.com/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/
+http://mfikri.com/en/blog/nodejs-mysql-crud
+http://micaminomaster.com.co/herramientas-desarrollo/nodejs-projecto-esqueleto-mvc-crud/
+
+https://medium.com/pulseque/creating-rest-api-application-with-nodejs-542dc0b657ef
+
+https://medium.com/programming-sage/handlebars-in-node-js-tutorial-a30a41fc6206
+

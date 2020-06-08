@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>Usuarios</title>
+        <!-- Bootstrap -->
+   
+ <script language="javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <body>
+        <div class="container">
+    
+        <h1>Usuarios</h1>
+           <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Usuario</th>
+                            <th>Cant Registro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         {{#each result}}
+                        <tr>
+                            <td>{{fecha}}</td>
+                            <td>{{nombre_usuario }}</td>
+                            <td>{{cantRegistro }}</td>
+                        </tr>
+                       {{/each}}
+                    </tbody>
+                </table>
+          
+        </div>
+    </body>
+</html>

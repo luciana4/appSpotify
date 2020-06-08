@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>Canciones Mas Escuchadas</title>
+        <!-- Bootstrap -->
+   <script language="javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+ 
+    <body>
+        <div class="container">
+    
+        <h1>Canciones mas Escuchadas</h1>
+           <table>
+                    <thead>
+                        <tr>
+                            <th>Cancion</th>
+                            <th>Album</th>
+                            <th>Artista</th>
+                            <th>Reproducciones</th>
+                            <th>Usuario</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                         {{#each result}}
+                        <tr>
+                            <td>{{nombre_cancion}}</td>
+                            <td>{{nombre_album }}</td>
+                            <td>{{nombre_artista }}</td>
+                            <td>{{reproducciones }}</td>
+                            <td>{{nombre_usuario }}</td>
+                        </tr>
+                       {{/each}}
+                    </tbody>
+                </table>
+          
+        </div>
+    </body>
+</html>
