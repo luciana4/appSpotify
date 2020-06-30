@@ -5,7 +5,7 @@ var con = mysql.createConnection({
  //host: "134.209.197.83",
   user: "root",
   password: "mafer.revelo99",
-  database: "Spotify1"
+  database: "classicmodels"
 });
 
 con.connect(function (err){

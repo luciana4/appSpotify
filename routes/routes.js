@@ -4,7 +4,7 @@ module.exports = function(app) {
     var todoList = require('../controllers/controller');
 
     app.route('/')
-        .get(todoList.index);
+        .get(todoList.formulario);
 
     app.route('/vistaUsuarios')
      .get(todoList.vista);
@@ -14,4 +14,13 @@ module.exports = function(app) {
 
     app.route('/cancionesGenero')
         .get(todoList.cancionesGenero);
+
+    app.route('/prueba/:nombre')
+    .get(todoList.vistaParametro);
+
+    app.route('/formulario')
+    .get(todoList.formulario);
+
+ 	app.route('/procesar')
+ 	.post(todoList.procesar); 
 };
